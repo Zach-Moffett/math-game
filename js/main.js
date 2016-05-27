@@ -52,9 +52,22 @@ $(document).ready(function() {
 	}
 	$('#submitAnswer').on('click', function() {
 		var userAnswer = $('#userInput').val();
-		console.log(incorrect)
 		if (userAnswer == answer) {
 			score++;
+			
+			if (score > 3){
+				$('#theQuestion').addClass('d1');	
+			}
+			if (score > 6){
+				$('#theQuestion').addClass('d2');	
+			}
+			if (score > 9){
+				$('#userInput').addClass('d3');	
+			}
+			if (score > 12){
+				$('body').addClass('d4');	
+			}
+			
 			clearInterval(timer);
 			getQuestion()
 			startTimer();
