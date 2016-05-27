@@ -1,2 +1,1 @@
-# math-game
-# math-game
+Math game using JQuery
