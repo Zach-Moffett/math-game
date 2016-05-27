@@ -48,7 +48,7 @@ $(document).ready(function() {
 				getQuestion()
 				startTimer()
 			}
-		}, 3000);
+		}, 2000);
 	}
 	$('#submitAnswer').on('click', function() {
 		var userAnswer = $('#userInput').val();
