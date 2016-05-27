@@ -28,19 +28,11 @@ body{
 	font-size:60px;
 	text-align: center;
 	box-sizing: border-box;
-/*
-	animation-name: fade;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-*/
+	float:left;
 }
 
-/*
-@keyframes fade {
-	0% {opacity: 1;}
-	100% {opacity: 0;}
-}
-*/
+ 
+
 
 #userInput{
 	width:100%;
@@ -93,4 +85,48 @@ body{
 	width:100%;
 	clear:both;
 	float:left;
+}
+
+@keyframes d1 {
+	0% {opacity: 1;}
+	50% {opacity: .2;}
+	100% {opacity: 1;}
+}
+@keyframes d2 {
+	0% {opacity: 1;font-size: 40px;}
+	50% {opacity: .2;font-size:10px;}
+	100% {opacity: 1;font-size: 40px;}
+}
+@keyframes d3 {
+	0% {margin-top:50px;}
+	50% {margin-top:0px;}
+	100% {margin-top:50px;}
+}
+@keyframes d4 {
+	0% {background-color:red;}
+	25% {background-color:green;}
+	50% {background-color:blue;}
+	50% {background-color:yellow;}
+	100% {background-color:white;}			
+}
+
+.d1{
+	animation-name: d1;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.d2{
+	animation-name: d2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;	
+}
+.d3{
+	animation-name: d3;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;	
+}
+.d4{
+	animation-name: d4;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;	
 }
